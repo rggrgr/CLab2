@@ -3,28 +3,28 @@ int main() {
 	int n;
 	setlocale(LC_ALL, "Russian");
 
-	std::cout << "ââåäèòå n" << std::endl;
+	std::cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ n" << std::endl;
 	std::cin >> n;
 	if (n >= 1 && n <= 100)
 	{
-		if ( (n >= 5 && n % 10 == 0) || n % 5 == 0)
+		if (n % 10 >= 2 && n % 10 <= 4 && n != 11 && n != 12 && n != 13 && n != 14)
 		{
-			std::cout << "Âàì " << n << " ëåò" << std::endl;
+			std::cout << "Ð’Ð°Ð¼ " << n << " Ð³Ð¾Ð´Ð°" << std::endl;
 		}else
 		{
 			if (n >= 1 && n <= 4)
 			{
-				std::cout << "Âàì " << n << " ãîä" << std::endl;
+				std::cout << "Ð’Ð°Ð¼ " << n << " Ð³Ð¾Ð´" << std::endl;
 			}else
 			{
-				if (n % 10 == 1)
+				if (n % 10 == 1 && n != 11)
 				{
-					std::cout << "Âàì " << n << " ãîä" << std::endl;
+					std::cout << "Ð’Ð°Ð¼ " << n << " Ð³Ð¾Ð´" << std::endl;
 				}else
 				{
-					if (n % 10 >= 2 && n % 10 <= 4)
+					if (n >= 5 || n % 5 == 0)
 					{
-						std::cout << "Âàì " << n << " ãîäà" << std::endl;
+						std::cout << "Ð’Ð°Ð¼ " << n << " Ð»ÐµÑ‚" << std::endl;
 					}
 				}
 			}
